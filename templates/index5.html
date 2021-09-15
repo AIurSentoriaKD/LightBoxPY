@@ -23,17 +23,18 @@
 <body id="page">
 	<div class="container">
 		<header>
-			<h1>CSS3 <span>Lightbox</span></h1>
-			<h2>Un experimento con HTML5 y CSS3</h2>
+			<img src="static/images/banners/index5.png" id="img_banner">
+			<h1>Tienda de<span> Artesanias</span></h1>
+      <h2>Un experimento con HTML5 y CSS3</h2>
 			<nav>
 				<h2>Categorias</h2>
 				<input id="toggle" type="checkbox" checked>
 				<ul>
-				  <li><a href="{{ url_for('index') }}">Demo 1</a></li>
-				  <li><a href="{{ url_for('index2') }}">Demo 2</a></li>
-				  <li><a href="{{ url_for('index3') }}">Demo 3</a></li>
-				  <li><a href="{{ url_for('index4') }}">Demo 4</a></li>
-				  <li><a class="current-demo"  href="{{ url_for('index5') }}">Demo 5</a></li>
+				  <li><a href="{{ url_for('index') }}">Cuencos</a></li>
+				  <li><a href="{{ url_for('index2') }}">Ceramicas</a></li>
+				  <li><a href="{{ url_for('index3') }}">Espejos del Sol</a></li>
+				  <li><a href="{{ url_for('index4') }}">Recuadros</a></li>
+				  <li><a class="current-demo"  href="{{ url_for('index5') }}">Prendas Artesanales</a></li>
 				</ul>
 			  </nav>
 		</header>
