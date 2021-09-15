@@ -25,14 +25,17 @@
 		<header>
 			<h1>CSS3 <span>Lightbox</span></h1>
 			<h2>Un experimento con HTML5 y CSS3</h2>
-			<p class="codrops-demos">
-				<a href="{{ url_for('index') }}">Demo 1</a>
-				<a href="{{ url_for('index2') }}">Demo 2</a>
-				<a class="current-demo" href="{{ url_for('index3') }}">Demo 3</a>
-				
-				<a href="{{ url_for('index4') }}">Demo 4</a>
-				<a href="{{ url_for('index5') }}">Demo 5</a>
-			</p>
+			<nav>
+				<h2>Categorias</h2>
+				<input id="toggle" type="checkbox" checked>
+				<ul>
+				  <li><a href="{{ url_for('index') }}">Demo 1</a></li>
+				  <li><a href="{{ url_for('index2') }}">Demo 2</a></li>
+				  <li><a class="current-demo" href="{{ url_for('index3') }}">Demo 3</a></li>
+				  <li><a href="{{ url_for('index4') }}">Demo 4</a></li>
+				  <li><a href="{{ url_for('index5') }}">Demo 5</a></li>
+				</ul>
+			  </nav>
 		</header>
 		<section>
 			<ul class="lb-album">
@@ -57,5 +60,28 @@
 		</section>
 	</div>
 </body>
-
+<div class="footer-clean">
+	<footer>
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-8 col-md-6 item">
+					<h3>Integrantes</h3>
+					<ul>
+						<li><a href="#">Alex Estrada Cuba</a></li>
+						<li><a href="#">Diego Flores Cardenas</a></li>
+						<li><a href="#">Mirco Paullo Olivera</a></li>
+						<li><a href="#">Franklin Soto Pacco</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-8 col-md-6 item">
+					<h3>Desarrollo de Software II</h3>
+					<ul>
+						<li><a href="#">UAC</a></li>
+						<li><a href="#">Cusco - Peru</a></li>
+						<li><a href="#">Copyright © 2021</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 </html>
